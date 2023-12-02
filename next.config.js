@@ -1,11 +1,6 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-  /* настройки */
-  server: {
-    port: 3001, // Используйте другой свободный порт
-  },
-}
+const nextConfig = {}
 
 module.exports = nextConfig

@@ -1,0 +1,58 @@
+import { TypeIconProps } from '@/types'
+
+export const IconEllipseGreen = (props: TypeIconProps) => {
+  return (
+    <svg
+      width='320'
+      height='498'
+      viewBox='0 0 320 498'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <g id='Ellipse 71' filter='url(#filter0_f_1_14969)'>
+        <ellipse
+          cx='219.478'
+          cy='249.142'
+          rx='200'
+          ry='200'
+          fill='url(#paint0_radial_1_14969)'
+        />
+      </g>
+      <defs>
+        <filter
+          id='filter0_f_1_14969'
+          x='-29.1093'
+          y='0.647003'
+          width='497.175'
+          height='496.989'
+          filterUnits='userSpaceOnUse'
+          color-interpolation-filters='sRGB'
+        >
+          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feBlend
+            mode='normal'
+            in='SourceGraphic'
+            in2='BackgroundImageFix'
+            result='shape'
+          />
+          <feGaussianBlur
+            stdDeviation='74.0332'
+            result='effect1_foregroundBlur_1_14969'
+          />
+        </filter>
+        <radialGradient
+          id='paint0_radial_1_14969'
+          cx='0'
+          cy='0'
+          r='1'
+          gradientUnits='userSpaceOnUse'
+          gradientTransform='translate(219.478 249.142) rotate(90) scale(100.428 100.521)'
+        >
+          <stop stop-color='#A7DCE6' />
+          <stop offset='1' stop-color='#0791A9' />
+        </radialGradient>
+      </defs>
+    </svg>
+  )
+}

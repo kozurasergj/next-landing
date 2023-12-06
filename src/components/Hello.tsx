@@ -23,25 +23,25 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
     }
   }, [])
   return (
-    <section className=' mt-[75px] md:mt-[50px] relative 3xl:flex 3xl:justify-center 3xl:gap-96'>
+    <section className=' mt-[75px] md:mt-[50px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
       <div className='flex flex-col items-center '>
         <div className='px-5 md:mb-5 3xl:mb-8'>
-          <h2 className='text-gradient text-5xl md:text-[64px] 3xl:text-[128px] font-bold uppercase relative '>
+          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[128px] font-bold uppercase relative '>
             Вітаю _)
           </h2>
-          <h2 className='text-gradient text-5xl md:text-[64px] 3xl:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
+          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
             я юніті
           </h2>
         </div>
-        <span className='text-gray2 font-medium text-xl 3xl:text-2xl mb-[340px] md:mb-[20px] 3xl:mb-16'>
+        <span className='text-gray2 font-medium text-xl lg:text-2xl mb-[340px] md:mb-[20px] 3xl:mb-16'>
           Унікальний AI
         </span>
         {/* Icon1AI */}
-        <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] left-[50%] md:left-[-300px] md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
+        <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[-80px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
           <Icon1AI className='' />
         </div>
         {/* end */}
-        <p className='text-purple text-center 3xl:text-3xl 3xl:mb-8 text-2xl md:text-base md:font-medium font-bold 3xl:font-semibold	px-5 w-[320px] md:w-full md:mb-5'>
+        <p className='text-purple text-center lg:text-3xl lg:mb-8 text-2xl md:text-base md:font-medium font-bold lg:font-semibold	px-5 w-[320px] md:w-full md:mb-5'>
           Кількість людей, що користуються Unity
         </p>
         <div className='flex flex-col w-[200px] md:w-0 items-center justify-center mb-8 mt-8 md:mt-0 md:flex-row md:gap-8 3xl:gap-20 '>

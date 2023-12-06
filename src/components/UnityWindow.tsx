@@ -5,7 +5,7 @@ import { IconWindow } from './icons/icon-window'
 
 export const UnityWindow = (props: ComponentProps) => {
   return (
-    <section className='hidden flex-col items-center gap-8 3xl:flex '>
+    <section className='hidden flex-col items-center gap-8 lg:flex '>
       <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg'>
         <IconVolume />
         інструкції

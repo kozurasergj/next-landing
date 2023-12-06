@@ -14,7 +14,7 @@ export const BtnDropDown = (props: BtnProps) => {
           cx='18'
           cy='18'
           r='17.5'
-          transform='rotate(90 18 18)'
+          // transform='rotate(90 18 18)'
           stroke='white'
         />
         <path

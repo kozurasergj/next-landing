@@ -57,30 +57,49 @@ export const Cards = (props: ComponentProps) => {
         </div>
       </div>
       <div className=' w-full target-cardsBg md:pb-[100px]'>
-        <div className='flex flex-col md:flex-row md:flex-wrap md:w-[624px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 md:pt-16 mb-[360px] md:mb-0'>
-          {/*  */}
-          <div className='relative w-[280px] md:w-[304px] rounded-[20px] bg-cardBgGray'>
-            <div className='absolute top-0 left-0 p-5 text-white font-medium text-base 3xl:font-bold 3xl:text-2xl'>
+        <div className='flex flex-col md:flex-row md:flex-wrap md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 mb-[360px] md:mb-0'>
+          {/* 1 */}
+          <div
+            className={`relative w-[280px] md:w-[304px] lg:w-[100%] lg:flex rounded-[20px] bg-cardBgGray  ${
+              isState1 ? 'lg:items-stretch' : 'lg:items-center'
+            }`}
+          >
+            <div className='absolute top-0 left-0 p-5 text-white font-bold text-base lg:text-2xl w-[240px] md:w-[300px] lg:w-[400px]'>
               Персональний підхід
             </div>
+            {!isState1 && (
+              <div className='hidden md:block absolute top-[50%] translate-y-[-50%] left-0 p-5 text-white text-sm lg:text-xl  w-[240px] md:w-[300px] lg:w-[400px]'>
+                Юніті зберігає результати ваших діалогів і на основі них генерує
+                більш персоналізовану інформацію, яка відповідає вашим
+                конкретним запитам
+              </div>
+            )}
             <img
-              src='/4.png'
+              src='/777.png'
               alt='Image'
               width={100}
               height={100}
-              className='w-full h-[280px]'
+              className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
             />
-            <div className='flex flex-col items-center'>
+            <div
+              className={`flex flex-col items-center lg:flex-col-reverse lg:items-center  ${
+                isState1 ? 'lg:justify-between lg:mb-8 lg:mr-8' : ' '
+              }`}
+            >
               <BtnDropDown
-                className={`mt-[14px] transition-all duration-500 ease-in-out ${
-                  isState1 ? 'mb-[14px] rotate-180' : ''
+                className={`mt-[14px] mb-3 transition-all duration-500 ease-in-out 	${
+                  isState1
+                    ? 'rotate-180 lg:-rotate-90 lg:mb-0 lg:self-end '
+                    : 'rotate-right lg:mx-5'
                 }`}
                 onClick={() => setState1(!isState1)}
               />
               <p
-                className={`mx-5 mb-[11px] text-base ${
-                  isState1 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'
-                } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
+                className={`mx-5 mb-[11px] text-base lg:text-lg ${
+                  isState1
+                    ? 'opacity-100 max-h-full block'
+                    : 'opacity-0 max-h-0 hidden'
+                } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden lg:m-10`}
               >
                 Юніті зберігає результати ваших діалогів і на основі них генерує
                 більш персоналізовану інформацію, яка відповідає вашим
@@ -88,28 +107,38 @@ export const Cards = (props: ComponentProps) => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className='relative w-[280px] md:w-[304px] rounded-[20px] bg-cardBgGray'>
+          {/* 2 */}
+          <div className='relative w-[280px] md:w-[304px] lg:w-[48%] rounded-[20px] bg-cardBgGray'>
             <div className='absolute top-0 left-0 p-5 text-white font-medium text-base 3xl:font-bold 3xl:text-2xl'>
               Допоможу у виріщенні повсякденних питань
             </div>
+            {!isState2 && (
+              <div className='hidden md:block absolute top-[50%] translate-y-[-50%] left-0 p-5 text-white text-sm lg:text-xl w-[240px] md:w-[300px] lg:w-[400px]'>
+                Забудьте про стрес, пов&#x2019;язаний із щоденними завданнями,
+                завдяки нашому ШІ-асистенту, який пропонує рішення для
+                покращення продуктивності та ефективності вашого особистого та
+                професійного життя.
+              </div>
+            )}
             <img
-              src='/1.png'
+              src='/777.png'
               alt='Image'
               width={100}
               height={100}
-              className='w-full h-[280px]'
+              className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
             />
             <div className='flex flex-col items-center'>
               <BtnDropDown
-                className={`mt-[14px] transition-all duration-500 ease-in-out ${
-                  isState2 ? 'mb-[14px] rotate-180' : ''
+                className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                  isState2 ? 'rotate-180' : ''
                 }`}
                 onClick={() => setState2(!isState2)}
               />
               <p
-                className={`mx-5 mb-[11px] text-base ${
-                  isState2 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'
+                className={`mx-5 mb-[11px] text-base lg:text-lg ${
+                  isState2
+                    ? 'opacity-100 max-h-full block'
+                    : 'opacity-0 max-h-0 hidden'
                 } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
               >
                 Забудьте про стрес, пов&#x2019;язаний із щоденними завданнями,
@@ -121,28 +150,37 @@ export const Cards = (props: ComponentProps) => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className='relative w-[280px] md:w-[304px] rounded-[20px] bg-cardBgGray'>
+          {/* 3 */}
+          <div className='relative w-[280px] md:w-[304px] lg:w-[48%] rounded-[20px] bg-cardBgGray'>
             <div className='absolute top-0 left-0 p-5 text-white font-medium text-base 3xl:font-bold 3xl:text-2xl'>
               Вирішу юридичні питання
             </div>
+            {!isState3 && (
+              <div className='hidden md:block absolute top-[50%] translate-y-[-50%] left-0 p-5 text-white text-sm lg:text-xl  w-[240px] md:w-[300px] lg:w-[400px]'>
+                Отримайте надійні юридичні консультації на відстані одного кліку
+                з нашим ШІ-помічником, спеціалізованим на наданні стратегічних
+                рекомендацій та інформованих порад.
+              </div>
+            )}
             <img
-              src='/3.png'
-              alt='ef3f'
+              src='/777.png'
+              alt='Image'
               width={100}
               height={100}
-              className='w-full h-[280px]'
+              className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
             />
             <div className='flex flex-col items-center'>
               <BtnDropDown
-                className={`mt-[14px] transition-all duration-500 ease-in-out ${
-                  isState3 ? 'mb-[14px] rotate-180' : ''
+                className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                  isState3 ? ' rotate-180' : ''
                 }`}
                 onClick={() => setState3(!isState3)}
               />
               <p
-                className={`mx-5 mb-[11px] text-base ${
-                  isState3 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'
+                className={`mx-5 mb-[11px] text-base lg:text-lg ${
+                  isState3
+                    ? 'opacity-100 max-h-full block'
+                    : 'opacity-0 max-h-0 hidden'
                 } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
               >
                 Отримайте надійні юридичні консультації на відстані одного кліку
@@ -154,36 +192,52 @@ export const Cards = (props: ComponentProps) => {
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className='relative w-[280px] md:w-[304px] rounded-[20px] bg-cardBgGray'>
-            <div className='absolute top-0 left-0 p-5 text-white font-medium text-base 3xl:font-bold 3xl:text-2xl'>
-              Голосовий помічник
+          {/* 4 */}
+          <div
+            className={`relative w-[280px] md:w-[304px] lg:w-[100%]  lg:flex rounded-[20px] bg-cardBgGray  ${
+              isState4 ? 'lg:items-stretch' : 'lg:items-center'
+            }`}
+          >
+            <div className='absolute top-0 left-0 p-5 text-white font-bold text-base lg:text-2xl w-[240px] md:w-[300px] lg:w-[400px]'>
+              Персональний підхід
             </div>
+            {!isState4 && (
+              <div className='hidden md:block absolute top-[50%] translate-y-[-50%] left-0 p-5 text-white text-sm lg:text-xl  w-[240px] md:w-[300px] lg:w-[400px]'>
+                Юніті зберігає результати ваших діалогів і на основі них генерує
+                більш персоналізовану інформацію, яка відповідає вашим
+                конкретним запитам
+              </div>
+            )}
             <img
-              src='/2.png'
-              alt='ef3f'
+              src='/777.png'
+              alt='Image'
               width={100}
               height={100}
-              className='w-full h-[280px]'
+              className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
             />
-            <div className='flex flex-col items-center'>
+            <div
+              className={`flex flex-col items-center lg:flex-col-reverse lg:items-center  ${
+                isState4 ? 'lg:justify-between lg:mb-8 lg:mr-8' : ' '
+              }`}
+            >
               <BtnDropDown
-                className={`mt-[14px] transition-all duration-500 ease-in-out ${
-                  isState4 ? 'mb-[14px] rotate-180' : ''
+                className={`mt-[14px] mb-3 transition-all duration-500 ease-in-out 	${
+                  isState4
+                    ? 'rotate-180 lg:-rotate-90 lg:mb-0 lg:self-end '
+                    : 'rotate-right lg:mx-5'
                 }`}
                 onClick={() => setState4(!isState4)}
               />
               <p
-                className={`mx-5 mb-[11px] text-base ${
-                  isState4 ? 'opacity-100 max-h-full' : 'opacity-0 max-h-0'
-                } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
+                className={`mx-5 mb-[11px] text-base lg:text-lg ${
+                  isState4
+                    ? 'opacity-100 max-h-full block'
+                    : 'opacity-0 max-h-0 hidden'
+                } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden lg:m-10`}
               >
-                Переживіть революцію взаємодії з технологіями завдяки нашому
-                голосовому помічнику ШІ, який розроблений для зручності,
-                швидкості, та інтуїтивності користування. Від простих запитань
-                до складних команд, наш голосовий асистент пропонує негайну
-                відповідь та дієву підтримку, роблячи ваше цифрове життя легшим
-                і ефективнішим.
+                Юніті зберігає результати ваших діалогів і на основі них генерує
+                більш персоналізовану інформацію, яка відповідає вашим
+                конкретним запитам
               </p>
             </div>
           </div>

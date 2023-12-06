@@ -27,12 +27,10 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
       <div className='flex flex-col items-center '>
         <div className='px-5 md:mb-5 3xl:mb-8'>
           <h2 className='text-gradient text-5xl md:text-[64px] 3xl:text-[128px] font-bold uppercase relative '>
-            {/* Вітаю _) */}
-            {/* {t('title')} */}
-            {children}
+            Вітаю _)
           </h2>
           <h2 className='text-gradient text-5xl md:text-[64px] 3xl:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
-            {/* я юніті */}
+            я юніті
           </h2>
         </div>
         <span className='text-gray2 font-medium text-xl 3xl:text-2xl mb-[340px] md:mb-[20px] 3xl:mb-16'>

@@ -7,6 +7,7 @@ import { BtnTryIt } from './buttons/btn-try-it'
 import { Icon1AI } from './icons/icon-1-ai'
 import { Icon2AI } from './icons/icon-2-ai'
 import { IconVolume } from './icons/icon-volume'
+import { UnityWindow } from './UnityWindow'
 
 export const Cards = (props: ComponentProps) => {
   // 1 section cards
@@ -38,17 +39,17 @@ export const Cards = (props: ComponentProps) => {
   return (
     <section className={props.className}>
       {/* 1 section */}
-      <div className='w-full flex justify-center md:justify-start md:w-[624px] mx-auto'>
+      <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto'>
         <div className='flex flex-col md:flex-row md:w-[527px] md:justify-between items-center justify-center mb-8 md:mb-0  w-[279px]  3xl:w-[1092px]'>
           <div>
-            <h3 className='md:text-left text-gradient text-3xl md:text-2xl 3xl:text-8xl font-bold uppercase relative text-center mb-5 3xl:mb-8'>
+            <h3 className='md:text-left text-gradient text-3xl md:text-2xl  lg:text-5xl 3xl:text-8xl font-bold uppercase relative text-center mb-5 3xl:mb-8'>
               Unity для бізнесу
             </h3>
-            <p className='mb-8 text-center md:text-left text-lg md:text-base 3xl:text-2xl text-[#D9D9D9]'>
+            <p className='mb-8 text-center md:text-left text-lg md:text-base  lg:text-xl 3xl:text-2xl text-[#D9D9D9]'>
               Індивідуальний підхід до офлайн та онлайн бізнесів
             </p>
           </div>
-          <div className=''>
+          <div className='lg:hidden'>
             <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
@@ -56,7 +57,7 @@ export const Cards = (props: ComponentProps) => {
           </div>
         </div>
       </div>
-      <div className=' w-full target-cardsBg md:pb-[100px]'>
+      <div className=' w-full target-cardsBg md:pb-[100px] lg:flex lg:justify-between lg:items-center'>
         <div className='flex flex-col md:flex-row md:flex-wrap md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 mb-[360px] md:mb-0'>
           {/* !!! mobile tablet */}
           <div className='flex flex-col lg:hidden gap-8 md:gap-4'>
@@ -433,10 +434,26 @@ export const Cards = (props: ComponentProps) => {
           </div>
           {/* end desctop !!!*/}
           {/*  */}
-          <div className='w-full flex justify-center items-center md:justify-start md:w-[624px] md:mx-auto  3xl:hidden mt-8 '>
-            <BtnTryIt className='px-8 py-2'>спробувати</BtnTryIt>
+          <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
+            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='15'
+                height='14'
+                viewBox='0 0 24 24'
+                enable-background='new 0 0 24 24'
+                className='3xl:w-[22px] 3xl:h-[22px]'
+              >
+                <path
+                  fill='currentColor'
+                  d='M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z'
+                />
+              </svg>
+              <span className='text-base 3xl:text-2xl'>спробувати</span>
+            </BtnBigPurple>
           </div>
         </div>
+        <UnityWindow />
       </div>
       {/* end 1 section */}
 

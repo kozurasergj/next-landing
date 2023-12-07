@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { BtnLanguage } from './buttons/btn-language'
 import { BtnSignIn } from './buttons/btn-sign-in'
 import { BtnBurger } from './buttons/burger/btn-burger'
@@ -10,7 +10,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header>  
+    <header>
       <div
         id='header'
         className='flex justify-between items-center mx-[20px] my-[20px] md:mx-[72px] md:my-[16px] 2xl:mx-[135px] 2xl:my-[12px]'
@@ -48,6 +48,11 @@ export const Header = () => {
                   className='whitespace-nowrap text-gray'
                 >
                   Перекладач
+                </Link>
+              </li>
+              <li>
+                <Link href='/unity' className='whitespace-nowrap text-gray'>
+                  Можливості Юніті
                 </Link>
               </li>
               <li>
@@ -91,6 +96,14 @@ export const Header = () => {
                   className='whitespace-nowrap text-purple'
                 >
                   Перекладач
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/translator'
+                  className='whitespace-nowrap text-purple'
+                >
+                  Можливості Юніті
                 </Link>
               </li>
               <li>

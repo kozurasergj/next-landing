@@ -24,12 +24,12 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
   }, [])
   return (
     <section className=' mt-[75px] md:mt-[50px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
-      <div className='flex flex-col items-center '>
+      <div className='flex flex-col items-center lg:w-[70%]'>
         <div className='px-5 md:mb-5 3xl:mb-8'>
-          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[128px] font-bold uppercase relative '>
+          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[100px] 2xl:text-[128px] font-bold uppercase relative '>
             Вітаю _)
           </h2>
-          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
+          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[100px] 2xl:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
             я юніті
           </h2>
         </div>
@@ -37,7 +37,7 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
           Унікальний AI
         </span>
         {/* Icon1AI */}
-        <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[-80px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
+        <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[480px] lg:left-[-200px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
           <Icon1AI className='' />
         </div>
         {/* end */}
@@ -76,7 +76,7 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
             ></div>
           </div>
         </div>
-        <BtnBigPurple className='bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+        <BtnBigPurple className='bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px] relative z-10'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='15'
@@ -93,7 +93,7 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
           <span className='text-base 3xl:text-2xl'>спробувати</span>
         </BtnBigPurple>
       </div>
-      <UnityWindow />
+      <UnityWindow className='lg:self-end'/>
     </section>
   )
 }

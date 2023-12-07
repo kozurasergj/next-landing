@@ -8,7 +8,6 @@ export const Icon2AI = (props: TypeIconProps) => {
       viewBox='0 0 320 462'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      preserveAspectRatio='none'
       {...props}
     >
       <g filter='url(#filter0_f_1_14857)'>

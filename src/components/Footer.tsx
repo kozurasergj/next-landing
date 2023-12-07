@@ -19,7 +19,7 @@ export const Footer = () => {
           height='16'
           viewBox='0 0 21 21'
           fill='none'
-          className='md:w-[8px] md:h-[8px]'
+          className='md:w-[8px] md:h-[8px] lg:w-[20px] lg:h-[20px]'
         >
           <path
             fill-rule='evenodd'

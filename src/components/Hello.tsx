@@ -1,10 +1,13 @@
 'use client'
-import { ReactNode, useEffect, useState } from 'react'
+import { getGradientClass, getTitleText } from '@/helpers'
+import parse from 'html-react-parser'
+import { useEffect, useState } from 'react'
 import { UnityWindow } from './UnityWindow'
 import { BtnBigPurple } from './buttons/big-purple-btn'
 import { Icon1AI } from './icons/icon-1-ai'
+import { Icon2AI } from './icons/icon-2-ai'
 
-export const Hello = ({ children }: { children?: ReactNode }) => {
+export const Hello = ({ page }: { page: string }) => {
   const [usersCount, setUsersCount] = useState<number>(1010011)
   const [businessCount, setBusinessCount] = useState<number>(999189)
 
@@ -26,19 +29,25 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
     <section className=' mt-[75px] md:mt-[50px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
       <div className='flex flex-col items-center lg:w-[70%]'>
         <div className='px-5 md:mb-5 3xl:mb-8'>
-          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[100px] 2xl:text-[128px] font-bold uppercase relative '>
-            Вітаю _)
-          </h2>
-          <h2 className='text-gradient text-5xl md:text-[64px] lg:text-[100px] 2xl:text-[128px] font-bold	uppercase text-right mt-2 3xl:mt-3 mb-8 md:mb-0'>
-            я юніті
+          <h2
+            className={`${getGradientClass(
+              page
+            )} text-5xl md:text-[64px] lg:text-[80px] 2xl:text-[128px] font-bold uppercase relative text-center `}
+          >
+            {/* Вітаю _) <br /> я юніті */}
+            {parse(getTitleText(page))}
           </h2>
         </div>
         <span className='text-gray2 font-medium text-xl lg:text-2xl mb-[340px] md:mb-[20px] 3xl:mb-16'>
           Унікальний AI
         </span>
         {/* Icon1AI */}
+
         <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[480px] lg:left-[-200px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
-          <Icon1AI className='' />
+          {page === 'main' && <Icon1AI className='' />}
+          {page === 'ukrainians' && <Icon2AI className='' />}
+          {page === 'business' && <Icon2AI className='' />}
+          {page === 'users' && <Icon2AI className='' />}
         </div>
         {/* end */}
         <p className='text-purple text-center lg:text-3xl lg:mb-8 text-2xl md:text-base md:font-medium font-bold lg:font-semibold	px-5 w-[320px] md:w-full md:mb-5'>
@@ -93,7 +102,7 @@ export const Hello = ({ children }: { children?: ReactNode }) => {
           <span className='text-base 3xl:text-2xl'>спробувати</span>
         </BtnBigPurple>
       </div>
-      <UnityWindow className='lg:self-end'/>
+      <UnityWindow className='lg:self-end' />
     </section>
   )
 }

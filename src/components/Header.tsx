@@ -15,10 +15,12 @@ export const Header = () => {
         id='header'
         className='flex justify-between items-center mx-[20px] my-[20px] md:mx-[72px] md:my-[16px] 2xl:mx-[135px] 2xl:my-[12px]'
       >
-        <IconLogo
-          fill={'#9463FE'}
-          className='w-[78px] h-[9px] md:w-[113px] md:h-[13px] xl:w-[170px] xl:h-[20px]'
-        />
+        <Link href='/'>
+          <IconLogo
+            fill={'#9463FE'}
+            className='w-[78px] h-[9px] md:w-[113px] md:h-[13px] xl:w-[170px] xl:h-[20px]'
+          />
+        </Link>
         <div className='flex justify-between items-center'>
           {/* desktop */}
           <nav className='hidden xl:block '>
@@ -66,7 +68,9 @@ export const Header = () => {
           {/* mobile */}
           <nav>
             <ul
-              className={`text-3xl ${styles.nav} ${open ? styles.active : ''}`}
+              className={`text-3xl   ${styles.nav} ${
+                open ? styles.active : ''
+              }`}
             >
               <li>
                 <Link

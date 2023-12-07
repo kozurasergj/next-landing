@@ -25,11 +25,13 @@ export const Form = () => {
           className='bg-[#161616] py-2 px-5 custom-border-input md:w-[304px] md:h-[32px] lg:w-[420px] lg:h-[50px] lg:text-base'
         />
         <textarea
-          placeholder='Розкажіть вашу думку'
+          placeholder='Share your thoughts'
           className='bg-[#161616] py-2 px-5 custom-border-textarea h-[50px] md:w-[304px] md:h-[64px] lg:w-[500px] lg:h-[164px] lg:text-base'
         ></textarea>
-        <div className='w-full flex justify-center items-center lg:hidden mt-8 md:mt-5 md:w-[624px] md:justify-start md:mx-auto'>
-          <BtnTryIt className='px-8 py-2 text-[#fff]'>Підтримати</BtnTryIt>
+        <div className='w-full flex justify-center items-center  mt-8 md:mt-5 md:w-[624px] md:justify-start md:mx-auto'>
+          <BtnTryIt className='px-8 py-2 text-[#fff]  md:text-base'>
+            Підтримати
+          </BtnTryIt>
         </div>
       </form>
       {/* info */}

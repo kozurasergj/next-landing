@@ -13,7 +13,7 @@ export const Header = () => {
     <header>
       <div
         id='header'
-        className='flex justify-between items-center mx-[20px] my-[20px] md:mx-[72px] md:my-[16px] 2xl:mx-[135px] 2xl:my-[12px]'
+        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[72px] md:my-[16px] 2xl:mx-[135px] 2xl:my-[12px]'
       >
         <Link href='/'>
           <IconLogo
@@ -121,14 +121,10 @@ export const Header = () => {
             </ul>
           </nav>
           {/* end */}
-          <div className='flex justify-between items-stretch'>
-            <BtnSignIn className='mx-7 2xl:mx-14 order-2 xl:order-1 md:flex' />
-            <BtnLanguage className='order-1 xl:order-2' />
-            <BtnBurger
-              open={open}
-              setOpen={setOpen}
-              className='order-3 ml-3 md:ml-0'
-            />
+          <div className='flex justify-between items-center w-[146px] h-[22px]'>
+            <BtnLanguage className='' />
+            <BtnSignIn className='w-[70px] h-[22px] flex items-center p-1 rounded-md ' />
+            <BtnBurger open={open} setOpen={setOpen} className='' />
           </div>
         </div>
       </div>

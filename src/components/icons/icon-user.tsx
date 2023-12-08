@@ -3,11 +3,12 @@ import { TypeIconProps } from '@/types'
 export const IconUser = (props: TypeIconProps) => {
   return (
     <svg
-      width='21'
-      height='22'
+      width='14'
+      height='14'
       viewBox='0 0 21 22'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      preserveAspectRatio='none'
       {...props}
     >
       <g id='user'>

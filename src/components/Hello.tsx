@@ -26,24 +26,24 @@ export const Hello = ({ page }: { page: string }) => {
     }
   }, [])
   return (
-    <section className=' mt-[75px] md:mt-[50px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
+    <section className=' mt-[60px] md:mt-[50px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
       <div className='flex flex-col items-center lg:w-[70%]'>
         <div className='px-5 md:mb-5 3xl:mb-8'>
           <h2
             className={`${getGradientClass(
               page
-            )} text-5xl md:text-[64px] lg:text-[80px] 2xl:text-[128px] font-bold uppercase relative text-center `}
+            )} text-[48px] tracking-wide mb-5 leading-[120%] font-bold uppercase relative text-center md:text-[64px] lg:text-[80px] 2xl:text-[128px] `}
           >
             {/* Вітаю _) <br /> я юніті */}
             {parse(getTitleText(page))}
           </h2>
         </div>
-        <span className='text-gray2 font-medium text-xl lg:text-2xl mb-[340px] md:mb-[20px] 3xl:mb-16'>
+        <span className='text-gray2 tracking-widest leading-[120%] font-medium text-[24px] lg:text-2xl mb-[360px] md:mb-[20px] 3xl:mb-16'>
           Унікальний AI
         </span>
         {/* Icon1AI */}
 
-        <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[480px] lg:left-[-200px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
+        <div className=' absolute top-[30px] left-[50%] translate-x-[-50%] flex items-center justify-center w-full md:top-[50px] md:left-[-300px] md:w-[768px] md:h-[602px] md:translate-x-[0] lg:top-[480px] lg:left-[-200px] 3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px]'>
           {page === '' && <Icon1AI className='' />}
           {page === 'ukrainians' && <Icon2AI className='' />}
           {page === 'business' && <Icon2AI className='' />}

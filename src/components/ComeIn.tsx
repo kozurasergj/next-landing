@@ -1,24 +1,24 @@
 export const ComeIn = () => {
   return (
-    <div className='flex flex-col items-center justify-center mb-8 md:mb-[122px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
-      <h3 className='md:text-left text-gradient text-3xl md:text-2xl lg:text-5xl 3xl:text-8xl font-bold uppercase relative text-center mb-5 3xl:mb-8'>
+    <div className='flex flex-col items-center justify-center  md:mb-[122px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
+      <h3 className='text-gradient text-[32px] leading-[110%] font-bold uppercase relative text-center mb-8 md:text-left md:text-2xl lg:text-5xl 3xl:text-8xl  3xl:mb-8'>
         ПРИЄДНУЙСЯ ДО НАШОГО КОМ’ЮНІТІ
       </h3>
-      <div className='bg-[#181818] rounded-[30px] border border-solid border-[#CECECE] pt-6 pb-4 px-2 lg:px-[64px] lg:py-[40px] mb-16 md:mb-0 w-[290px] md:w-[630px]'>
-        <h3 className='text-base text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:text-left'>
+      <div className=' border-card rounded-[20px] w-[280px] h-[178px] p-5  lg:px-[64px] lg:py-[40px] mb-16 md:mb-0  md:w-[630px]'>
+        <h3 className='text-[16px] leading-[130%] text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:text-left'>
           МАЙБУТНЄ ВЖЕ ТУТ Unity
         </h3>
-        <h3 className='text-base text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:mb-8 lg:text-left'>
+        <h3 className='text-base text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:mb-8 lg:text-left mb-5'>
           САМЕ ЗАРАЗ ЧАС ПОЧАТИ
         </h3>
         <div className='flex flex-col items-center lg:items-start'>
-          <p className='text-lg font-medium text-center mb-3 lg:text-2xl'>
+          <p className='text-[18px] font-medium leading-[120%] text-center mb-[10px] lg:text-2xl'>
             Посилання для близьких
           </p>
           <div className='flex flex-col items-center lg:flex-row lg:gap-8'>
             <a
               href='https://t.me/Serezha33'
-              className='text-[#9463FE] font-semibold text-lg px-5 py-2 mb-1 lg:p-0 lg:m-0 lg:text-2xl'
+              className='text-[#9463FE] font-semibold text-lg px-5 py-[5] mb-1 lg:p-0 lg:m-0 lg:text-2xl'
             >
               Телеграм
             </a>

@@ -50,12 +50,12 @@ export const Hello = ({ page }: { page: string }) => {
           {page === 'users' && <Icon2AI className='' />}
         </div>
         {/* end */}
-        <p className='text-purple text-center lg:text-3xl lg:mb-8 text-2xl md:text-base md:font-medium font-bold lg:font-semibold	px-5 w-[320px] md:w-full md:mb-5'>
+        <p className='text-purple text-left text-[24px]  leading-[110%] font-bold mx-8  md:w-full md:mb-5 md:text-base md:font-medium lg:text-3xl lg:mb-8  lg:font-semibold'>
           Кількість людей, що користуються Unity
         </p>
         <div className='flex flex-col w-[200px] md:w-0 items-center justify-center mb-8 mt-8 md:mt-0 md:flex-row md:gap-8 3xl:gap-20 '>
-          <div className='flex flex-col mb-8 md:mb-0 items-center'>
-            <span className='text-white text-3xl 3xl:text-5xl tracking-wider'>
+          <div className='flex flex-col mb-8 md:mb-0 items-center '>
+            <span className='text-white text-3xl  tracking-wider h-[35px] my-[23px] font-sans 3xl:text-5xl'>
               {usersCount}
             </span>
             <p className='text-[#B8B8B8] my-2 3xl:mb-3 text-base 3xl:text-xl'>
@@ -69,8 +69,8 @@ export const Hello = ({ page }: { page: string }) => {
               }}
             ></div>
           </div>
-          <div className='flex flex-col items-center md:'>
-            <span className='text-white text-3xl 3xl:text-5xl tracking-wider'>
+          <div className='flex flex-col items-center'>
+            <span className='text-white text-3xl tracking-wider h-[35px] my-[23px] font-sans 3xl:text-5xl'>
               {businessCount}
             </span>
             <p className='text-[#B8B8B8] my-2 text-base 3xl:text-xl 3xl:mb-3'>
@@ -99,7 +99,9 @@ export const Hello = ({ page }: { page: string }) => {
               d='M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z'
             />
           </svg>
-          <span className='text-base 3xl:text-2xl'>спробувати</span>
+          <span className='text-[16px] leading-[130%] tracking-widest uppercase  3xl:text-2xl'>
+            спробувати
+          </span>
         </BtnBigPurple>
       </div>
       <UnityWindow className='lg:self-end' />

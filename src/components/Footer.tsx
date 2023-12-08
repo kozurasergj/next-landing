@@ -15,8 +15,8 @@ export const Footer = () => {
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
-          width='16'
-          height='16'
+          width='23'
+          height='23'
           viewBox='0 0 21 21'
           fill='none'
           className='md:w-[16px] md:h-[16px] lg:w-[20px] lg:h-[20px]'
@@ -30,12 +30,12 @@ export const Footer = () => {
         </svg>
       </a>
       {/* arrow end */}
-      <div className='px-[20px] py-7 flex flex-col items-center gap-8 md:gap-4 md:pt-10 md:pb-2'>
+      <div className='px-[20px] py-7 flex flex-col items-center md:gap-4 md:pt-10 md:pb-2'>
         <IconLogo
           fill={'#656565'}
-          className='w-[280px] h-[33px] md:w-[588px] md:h-[70px]'
+          className='w-[280px] h-[33px] md:w-[588px] md:h-[70px] mb-[30px]'
         />
-        <ul className='text-base gap-4 flex flex-col md:flex-row items-center md:w-[599px]'>
+        <ul className='mb-[40px] text-base gap-1 flex flex-col justify-start h-[120px] md:flex-row items-center md:w-[599px]'>
           <li className='text-center'>
             <Link
               href='/ukrainians'
@@ -82,13 +82,13 @@ export const Footer = () => {
             </button>
           </li>
         </ul>
-        <div className='flex w-[136px] gap-5'>
+        <div className='flex w-[136px] gap-5 mb-[25px]'>
           <BtnTelegram />
           <BtnInstagram />
           <BtnFacebook />
         </div>
         <div className='flex flex-col items-center text-[#909090] text-[10px]'>
-          <p className='mb-3'>© 2024 Unity Care. All rights reserved</p>
+          <p className=''>© 2024 Unity Care. All rights reserved</p>
           <div className='flex justify-between gap-3'>
             <a href='/'>Terms & Conditions</a>
             <a href='/'>Privacy Policy</a>

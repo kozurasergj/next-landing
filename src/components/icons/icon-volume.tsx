@@ -3,8 +3,8 @@ import { TypeIconProps } from '@/types'
 export const IconVolume = (props: TypeIconProps) => {
   return (
     <svg
-      width='31'
-      height='31'
+      width='16'
+      height='16'
       viewBox='0 0 31 31'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

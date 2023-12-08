@@ -12,11 +12,6 @@ export const CardsBusiness = (props: any) => {
 
   return (
     <section className={`${props.className}`}>
-      <div className='relative'>
-        <div className='md:hidden  absolute top-[-450px] left-[50%]  translate-x-[-50%] flex items-center justify-center w-full'>
-          <Icon2AI className='' />
-        </div>
-      </div>
       <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto'>
         <div className='flex flex-col md:flex-row md:w-[527px] md:justify-between items-center justify-center mb-8 md:mb-0  w-[279px]  3xl:w-[1092px]'>
           <div>

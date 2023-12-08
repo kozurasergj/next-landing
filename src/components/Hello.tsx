@@ -44,7 +44,7 @@ export const Hello = ({ page }: { page: string }) => {
         {/* Icon1AI */}
 
         <div className='3xl:w-[729px] 3xl:h-[672px] 3xl:left-[-200px] 3xl:top-[500px] absolute top-[30px] md:top-[50px] md:left-[-300px] lg:top-[480px] lg:left-[-200px] left-[50%]  md:w-[768px] md:h-[602px] md:translate-x-[0] translate-x-[-50%] flex items-center justify-center w-full'>
-          {page === 'main' && <Icon1AI className='' />}
+          {page === '' && <Icon1AI className='' />}
           {page === 'ukrainians' && <Icon2AI className='' />}
           {page === 'business' && <Icon2AI className='' />}
           {page === 'users' && <Icon2AI className='' />}

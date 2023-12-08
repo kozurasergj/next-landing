@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className='relative'>
       {/* arrow to top  */}
       <a
-        className='absolute bottom-0 right-0 py-8  px-[20px] md:px-0 md:top-2 md:right-[100px] '
+        className='absolute bottom-0 right-0 my-8 px-[20px] md:px-0 md:top-2 md:right-[100px]  lg:w-[20px] lg:h-[20px]'
         href='#header'
       >
         <svg
@@ -19,7 +19,7 @@ export const Footer = () => {
           height='16'
           viewBox='0 0 21 21'
           fill='none'
-          className='md:w-[8px] md:h-[8px] lg:w-[20px] lg:h-[20px]'
+          className='md:w-[16px] md:h-[16px] lg:w-[20px] lg:h-[20px]'
         >
           <path
             fill-rule='evenodd'
@@ -29,7 +29,7 @@ export const Footer = () => {
           />
         </svg>
       </a>
-      {/* end */}
+      {/* arrow end */}
       <div className='px-[20px] py-7 flex flex-col items-center gap-8 md:gap-4 md:pt-10 md:pb-2'>
         <IconLogo
           fill={'#656565'}

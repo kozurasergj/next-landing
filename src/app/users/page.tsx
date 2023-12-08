@@ -2,6 +2,7 @@
 import { ComeIn } from '@/components/ComeIn'
 import { Form } from '@/components/Form'
 import { Hello } from '@/components/Hello'
+import { InfiniteUnity } from '@/components/InfiniteUnity'
 import { usePathnameWithoutSlash } from '@/helpers/path'
 import { CardsBusiness } from '@/sections/CardsBusiness'
 import { CardsUsers } from '@/sections/CardsUsers'
@@ -15,6 +16,7 @@ export default function Users() {
       <CardsUsers className='mt-[164px]' />
       <Form />
       <ComeIn />
+      <InfiniteUnity className='mb-[100px]'/>
     </section>
   )
 }

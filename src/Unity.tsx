@@ -1,5 +1,5 @@
-import { Icon2AI } from "./icons/icon-2-ai"
-import { UnityWindow } from "./UnityWindow"
+import { Icon2AI } from "./components/icons/icon-2-ai"
+import { UnityWindow } from "./components/UnityWindow"
 
 
 export const Unity = () => {

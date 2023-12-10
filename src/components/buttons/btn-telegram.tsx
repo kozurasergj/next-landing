@@ -9,7 +9,7 @@ export const BtnTelegram = (props: BtnProps) => {
       target='_blank'
       rel='noopener noreferrer'
     >
-      <IconTelegram />
+      <IconTelegram className='md:w-[24px] md:h-[24px]' />
     </a>
   )
 }

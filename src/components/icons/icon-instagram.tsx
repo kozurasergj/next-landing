@@ -8,6 +8,7 @@ export const IconInstagram = (props: TypeIconProps) => {
       viewBox='0 0 32 33'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      {...props}
     >
       <circle cx='16' cy='16.5537' r='16' fill='url(#paint0_linear_202_846)' />
       <path

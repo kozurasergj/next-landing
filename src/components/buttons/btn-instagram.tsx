@@ -9,7 +9,7 @@ export const BtnInstagram = (props: BtnProps) => {
       target='_blank'
       rel='noopener noreferrer'
     >
-      <IconInstagram />
+      <IconInstagram className='md:w-[24px] md:h-[24px]' />
     </a>
   )
 }

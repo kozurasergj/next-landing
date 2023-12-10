@@ -9,7 +9,7 @@ export const BtnFacebook = (props: BtnProps) => {
       rel='noopener noreferrer'
       className={` ${props.className}`}
     >
-      <IconFacebook />
+      <IconFacebook className='md:w-[24px] md:h-[24px]' />
     </a>
   )
 }

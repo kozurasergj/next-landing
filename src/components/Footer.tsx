@@ -3,6 +3,7 @@ import { IconLogo } from './icons/icon-logo'
 import Link from 'next/link'
 import { BtnFacebook } from './buttons/btn-facebook'
 import { BtnInstagram } from './buttons/btn-instagram'
+import { BtnSignIn } from './buttons/btn-sign-in'
 import { BtnTelegram } from './buttons/btn-telegram'
 
 export const Footer = () => {
@@ -10,7 +11,7 @@ export const Footer = () => {
     <footer className='relative'>
       {/* arrow to top  */}
       <a
-        className='absolute bottom-0 right-0 my-8 px-[20px] md:px-0 md:top-2 md:right-[100px]  lg:w-[20px] lg:h-[20px]'
+        className='absolute bottom-[20px] right-0 my-8 px-[20px] md:px-0 md:top-2 md:right-[70px] lg:w-[20px] lg:h-[20px]'
         href='#header'
       >
         <svg
@@ -30,16 +31,16 @@ export const Footer = () => {
         </svg>
       </a>
       {/* arrow end */}
-      <div className='px-[20px] py-7 flex flex-col items-center md:gap-4 md:pt-10 md:pb-2'>
+      <div className='px-[20px] py-7 flex flex-col items-center  md:gap-0  md:pt-10 md:pb-2 '>
         <IconLogo
           fill={'#656565'}
-          className='w-[280px] h-[33px] md:w-[588px] md:h-[70px] mb-[30px]'
+          className='w-[280px] h-[33px] md:w-[588px] md:h-[71px] mb-[30px] md:mb-[10px]'
         />
-        <ul className='mb-[40px] text-base gap-1 flex flex-col justify-start h-[120px] md:flex-row items-center md:w-[599px]'>
+        <ul className='mb-[30px] text-base gap-[5px] h-[138px] md:gap-[16px] flex flex-col justify-start  md:mb-[15px]  md:h-auto md:flex-row items-center '>
           <li className='text-center'>
             <Link
               href='/ukrainians'
-              className='text-gray whitespace-nowrap text-base'
+              className='text-gray whitespace-nowrap leading-[110%] text-base md:text-[14px]'
             >
               Для Українців
             </Link>
@@ -47,7 +48,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/business'
-              className='whitespace-nowrap text-[#C9C9C9] text-base'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
             >
               Для Бізнесу
             </Link>
@@ -55,7 +56,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/users'
-              className='whitespace-nowrap text-[#C9C9C9] text-base'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
             >
               Для користувачів
             </Link>
@@ -63,7 +64,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/translator'
-              className='whitespace-nowrap text-[#C9C9C9] text-base'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
             >
               Про нас
             </Link>
@@ -71,27 +72,46 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/contacts'
-              className='whitespace-nowrap text-[#C9C9C9] text-base'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
             >
               Контакти
             </Link>
           </li>
-          <li className='text-center ml-[48px] hidden md:block'>
-            <button className='bg-purple py-1 px-[10px] rounded-[4px]'>
+          {/* <li className='text-center ml-[48px] hidden md:block'>
+            <button className='bg-purple py-1 px-[10px] rounded-[4px] md:w-[88px] md:h-[29px] '>
               Увійти
             </button>
-          </li>
+          </li> */}
+          <BtnSignIn className=' hidden md:flex ml-[40px] items-center p-1 rounded-md md:w-[88px] md:h-[29px] md:mt-1' />
         </ul>
-        <div className='flex w-[136px] gap-5 mb-[25px]'>
+        <div className='flex w-[136px] gap-5 mb-[14px] md:items-center md:justify-center'>
           <BtnTelegram />
           <BtnInstagram />
           <BtnFacebook />
         </div>
-        <div className='flex flex-col items-center text-[#909090] text-[10px]'>
-          <p className=''>© 2024 Unity Care. All rights reserved</p>
-          <div className='flex justify-between gap-3'>
-            <a href='/'>Terms & Conditions</a>
-            <a href='/'>Privacy Policy</a>
+        <div className='flex flex-col items-center text-[10px]  md:flex-row md:gap-3'>
+          <p className='md:text-[7px] text-gray2'>
+            © 2024 Unity Care. All rights reserved
+          </p>
+          <div className='flex justify-between  text-gray2 w-[185px] flex-wrap'>
+            <a
+              href='/'
+              className='text-gray2  md:text-[7px] whitespace-nowrap w-full text-center'
+            >
+              Terms & policies
+            </a>
+            <a
+              href='/'
+              className='text-gray2  md:text-[7px] whitespace-nowrap text-center'
+            >
+              Terms & Conditions
+            </a>
+            <a
+              href='/'
+              className='text-gray2  md:text-[7px] whitespace-nowrap text-center'
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>

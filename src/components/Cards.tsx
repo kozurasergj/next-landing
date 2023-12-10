@@ -1,10 +1,10 @@
 'use client'
 import { ComponentProps } from '@/types'
 import { useState } from 'react'
-import { BtnBigPurple } from './buttons/big-purple-btn'
 import { BtnDropDown } from './buttons/btn-drop-down'
 import { BtnTryIt } from './buttons/btn-try-it'
 import { IconVolume } from './icons/icon-volume'
+import { BtnBig } from './buttons/btn-big'
 
 export const Cards = (props: ComponentProps) => {
   // 1 section cards
@@ -16,37 +16,35 @@ export const Cards = (props: ComponentProps) => {
   return (
     <section className={props.className}>
       {/* 1 section ready */}
-      <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto'>
+      <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto '>
         <div className='flex flex-col md:flex-row md:w-[527px] md:justify-between items-center justify-center mb-8 md:mb-0  w-[279px]  3xl:w-[1092px]'>
           <div>
-            <h3 className='md:text-left text-gradient text-[32px] leading-[110%] tracking-wider md:text-2xl  lg:text-5xl 3xl:text-8xl font-bold uppercase relative text-center mb-5 3xl:mb-8'>
+            <h3 className='text-gradient text-[32px] font-bold leading-[110%]  text-center mb-5 md:text-left  md:text-[28px]  lg:text-5xl 3xl:text-8xl uppercase relative  3xl:mb-8'>
               unity робить ВСЕ доступним{' '}
             </h3>
-            <p className='mb-8 text-center leading-[120%] tracking-wider md:text-left  text-lg md:text-base  lg:text-xl 3xl:text-2xl text-[#D9D9D9]'>
+            <p className='text-[#D9D9D9] mb-8 md:mb-0 text-center text-lg leading-[120%]  md:text-left md:text-[16px] lg:text-xl 3xl:text-2xl '>
               Новітні технології для покращення вашого повсякденного життя,
               ведення бізнесу та вирішення будь-яких питань{' '}
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[93px] h-[93px] turquoiseBg '>
-              <IconVolume className='mb-0 font-bold' />
-              <span className='text-[14px] font-bold leading-[130%]'>
+            <BtnBig className='w-[93px] h-[93px] turquoiseBg gap-1'>
+              <IconVolume className='' />
+              <span className='text-[14px] font-bold leading-[130%] capitalize text-center '>
                 інструкції
               </span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
-      <div className=' w-full target-cardsBg md:pb-[100px] '>
-        <div className='flex flex-col mb-8  md:flex-row  md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 '>
-          {/* !!! mobile tablet */}
-          <div className='flex flex-col gap-8 md:gap-4'>
+      <div className=' w-full target-cardsBg md:mb-[99px]'>
+        <div className='flex flex-col mb-[30px] md:mb-16  md:flex-row  md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 '>
+          <div className='flex flex-col gap-[30px] md:gap-4'>
             {/* 1 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
-              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] tracking-wider text-base 3xl:font-bold 3xl:text-2xl'>
+              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] text-base 3xl:font-bold 3xl:text-2xl'>
                 Персональний підхід{' '}
               </div>
-
               <img
                 src='/777.png'
                 alt='Image'
@@ -55,14 +53,8 @@ export const Cards = (props: ComponentProps) => {
                 className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
               />
               <div className='flex flex-col items-center'>
-                <BtnDropDown
-                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
-                    isState1 ? '' : 'rotate-180'
-                  }`}
-                  onClick={() => setState1(!isState1)}
-                />
                 <p
-                  className={`mx-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg ${
                     isState1
                       ? 'opacity-100 min-h-[175px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
@@ -72,14 +64,19 @@ export const Cards = (props: ComponentProps) => {
                   генерує більш персоналізовану інформацію, яка відповідає вашим
                   конкретним запитам
                 </p>
+                <BtnDropDown
+                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                    isState1 ? '' : 'rotate-180'
+                  }`}
+                  onClick={() => setState1(!isState1)}
+                />
               </div>
             </div>
             {/* 2 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
-              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] tracking-wider text-base 3xl:font-bold 3xl:text-2xl'>
+              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] text-base 3xl:font-bold 3xl:text-2xl'>
                 Допоможу у виріщенні повсякденних питань{' '}
               </div>
-
               <img
                 src='/777.png'
                 alt='Image'
@@ -88,14 +85,8 @@ export const Cards = (props: ComponentProps) => {
                 className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
               />
               <div className='flex flex-col items-center'>
-                <BtnDropDown
-                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
-                    isState2 ? '' : 'rotate-180'
-                  }`}
-                  onClick={() => setState2(!isState2)}
-                />
                 <p
-                  className={`mx-5 mb-[11px] text-base  font-bold lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg  ${
                     isState2
                       ? 'opacity-100 min-h-[175px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
@@ -105,16 +96,21 @@ export const Cards = (props: ComponentProps) => {
                   розпланує ваш день, і зробить робочий процес більш
                   ефективним. 
                 </p>
+                <BtnDropDown
+                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                    isState2 ? '' : 'rotate-180'
+                  }`}
+                  onClick={() => setState2(!isState2)}
+                />
               </div>
             </div>
           </div>
-          <div className='flex flex-col gap-8 md:gap-4'>
+          <div className='flex flex-col gap-[30px] md:gap-4'>
             {/* 3 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
-              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] tracking-wider text-base 3xl:font-bold 3xl:text-2xl'>
+              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%]  text-base 3xl:font-bold 3xl:text-2xl'>
                 Вирішу юридичні питання{' '}
               </div>
-
               <img
                 src='/777.png'
                 alt='Image'
@@ -123,14 +119,8 @@ export const Cards = (props: ComponentProps) => {
                 className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
               />
               <div className='flex flex-col items-center'>
-                <BtnDropDown
-                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
-                    isState3 ? '' : 'rotate-180'
-                  }`}
-                  onClick={() => setState3(!isState3)}
-                />
                 <p
-                  className={`mx-5 mb-[11px] text-base  font-bold lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg  ${
                     isState3
                       ? 'opacity-100 min-h-[175px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
@@ -140,11 +130,17 @@ export const Cards = (props: ComponentProps) => {
                   консультації та ефективні поради для вирішення будь-яких
                   питань у юридичній сфері.
                 </p>
+                <BtnDropDown
+                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                    isState3 ? '' : 'rotate-180'
+                  }`}
+                  onClick={() => setState3(!isState3)}
+                />
               </div>
             </div>
             {/* 4 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
-              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] tracking-wider text-base 3xl:font-bold 3xl:text-2xl'>
+              <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%]  text-base 3xl:font-bold 3xl:text-2xl'>
                 Голосовий помічник{' '}
               </div>
 
@@ -156,14 +152,8 @@ export const Cards = (props: ComponentProps) => {
                 className={`w-full h-[280px] lg:h-[420px] rounded-[20px]`}
               />
               <div className='flex flex-col items-center'>
-                <BtnDropDown
-                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
-                    isState4 ? '' : 'rotate-180'
-                  }`}
-                  onClick={() => setState4(!isState4)}
-                />
                 <p
-                  className={`mx-5 mb-[11px] text-base  font-bold lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg ${
                     isState4
                       ? 'opacity-100 min-h-[175px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
@@ -173,12 +163,18 @@ export const Cards = (props: ComponentProps) => {
                   комунікацію, і отримуйте швидкий доступ до інформації та
                   виконання завдань.
                 </p>
+                <BtnDropDown
+                  className={`mt-[14px] mb-[14px] transition-all duration-500 ease-in-out ${
+                    isState4 ? '' : 'rotate-180'
+                  }`}
+                  onClick={() => setState4(!isState4)}
+                />
               </div>
             </div>
           </div>
         </div>
-        <div className='w-full flex justify-center items-center md:justify-start  mb-8 md:w-[624px] mx-auto'>
-          <BtnTryIt className='w-[182px] h-[39px] py-1 text-[18px] leading-[130%] font-bold capitalize tracking-wider'>
+        <div className='w-full flex justify-center items-center md:justify-start md:w-[624px] mx-auto'>
+          <BtnTryIt className='w-[182px] h-[39px] py-1 text-[18px] leading-[130%] font-bold capitalize '>
             спробувати{' '}
           </BtnTryIt>
         </div>

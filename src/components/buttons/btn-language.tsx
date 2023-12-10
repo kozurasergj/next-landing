@@ -88,13 +88,15 @@ export const BtnLanguage = (props: BtnProps) => {
     <>
       <button
         onClick={() => setIsDropDownListOpen(!isDropDownListOpen)}
-        className={'flex-center flex-col gap-[6px] rounded-full w-[20px] h-[20px]'}
+        className={
+          'flex-center flex-col gap-[6px] rounded-full w-[20px] h-[20px] '
+        }
         ref={wrapRef}
       >
-        <div className={'flex-center h-[20px] w-[20px]'}>
-          <div
-            className={`overflow-hidden rounded-full outline outline-1`}
-          >
+        <div
+          className={'flex-center h-[20px] w-[20px] md:w-[28px] md:h-[28px]'}
+        >
+          <div className={`overflow-hidden rounded-full outline outline-1`}>
             {languages.find((item) => item.value === currentLanguage)!.icon}
           </div>
         </div>

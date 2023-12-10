@@ -1,5 +1,5 @@
 'use client'
-import { BtnBigPurple } from '@/components/buttons/big-purple-btn'
+import { BtnBig } from '@/components/buttons/btn-big'
 import { BtnDropDown } from '@/components/buttons/btn-drop-down'
 import { BtnTryIt } from '@/components/buttons/btn-try-it'
 import { Icon1AI } from '@/components/icons/icon-1-ai'
@@ -50,12 +50,12 @@ export const Garbage = (props: ComponentProps) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[93px] h-[93px] turquoiseBg '>
+            <BtnBig className='w-[93px] h-[93px] turquoiseBg '>
               <IconVolume className='mb-0 font-bold' />
               <span className='text-[14px] font-bold leading-[130%]'>
                 інструкції
               </span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -234,10 +234,10 @@ export const Garbage = (props: ComponentProps) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
+            <BtnBig className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -623,7 +623,7 @@ export const Garbage = (props: ComponentProps) => {
           {/* end desctop !!!*/}
           {/*  */}
           <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
-            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+            <BtnBig className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='15'
@@ -638,7 +638,7 @@ export const Garbage = (props: ComponentProps) => {
                 />
               </svg>
               <span className='text-base 3xl:text-2xl'>спробувати</span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -661,10 +661,10 @@ export const Garbage = (props: ComponentProps) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
+            <BtnBig className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -1050,7 +1050,7 @@ export const Garbage = (props: ComponentProps) => {
           {/* end desctop !!!*/}
           {/*  */}
           <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
-            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+            <BtnBig className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='15'
@@ -1065,7 +1065,7 @@ export const Garbage = (props: ComponentProps) => {
                 />
               </svg>
               <span className='text-base 3xl:text-2xl'>спробувати</span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -1093,10 +1093,10 @@ export const Garbage = (props: ComponentProps) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
+            <BtnBig className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -1482,7 +1482,7 @@ export const Garbage = (props: ComponentProps) => {
           {/* end desctop !!!*/}
           {/*  */}
           <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
-            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+            <BtnBig className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='15'
@@ -1497,7 +1497,7 @@ export const Garbage = (props: ComponentProps) => {
                 />
               </svg>
               <span className='text-base 3xl:text-2xl'>спробувати</span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -1515,10 +1515,10 @@ export const Garbage = (props: ComponentProps) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
+            <BtnBig className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -1904,7 +1904,7 @@ export const Garbage = (props: ComponentProps) => {
           {/* end desctop !!!*/}
           {/*  */}
           <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
-            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+            <BtnBig className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='15'
@@ -1919,7 +1919,7 @@ export const Garbage = (props: ComponentProps) => {
                 />
               </svg>
               <span className='text-base 3xl:text-2xl'>спробувати</span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>

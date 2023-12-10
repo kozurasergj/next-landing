@@ -1,4 +1,4 @@
-import { BtnBigPurple } from '@/components/buttons/big-purple-btn'
+import { BtnBig } from '@/components/buttons/btn-big'
 import { BtnDropDown } from '@/components/buttons/btn-drop-down'
 import { Icon2AI } from '@/components/icons/icon-2-ai'
 import { IconVolume } from '@/components/icons/icon-volume'
@@ -28,10 +28,10 @@ export const CardsUsers = (props: any) => {
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBigPurple className='w-[139px] h-[139px] turquoiseBg '>
+            <BtnBig className='w-[139px] h-[139px] turquoiseBg '>
               <IconVolume />
               інструкції
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>
@@ -417,7 +417,7 @@ export const CardsUsers = (props: any) => {
           {/* end desctop !!!*/}
           {/*  */}
           <div className='w-full flex justify-center items-center md:justify-start lg:justify-center md:w-[624px] md:mx-auto mt-8 '>
-            <BtnBigPurple className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
+            <BtnBig className='px-8 py-2 bg-purple h-[139px] w-[139px] 1xl:h-[158px] 1xl:w-[158px] 2xl:h-[216px] 2xl:w-[216px] lg:h-[142px] lg:w-[142px] xl:h-[145px] xl:w-[145px]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='15'
@@ -432,7 +432,7 @@ export const CardsUsers = (props: any) => {
                 />
               </svg>
               <span className='text-base 3xl:text-2xl'>спробувати</span>
-            </BtnBigPurple>
+            </BtnBig>
           </div>
         </div>
       </div>

@@ -1,35 +1,32 @@
 export const ComeIn = () => {
   return (
-    <div className='flex flex-col items-center justify-center  md:mb-[122px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
-      <h3 className='text-gradient text-[32px] leading-[110%] font-bold uppercase relative text-center mb-8 md:text-left md:text-2xl lg:text-5xl 3xl:text-8xl  3xl:mb-8'>
+    <div className='flex flex-col items-center justify-center mb-[92px] md:mb-[100px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
+      <h3 className='text-gradient text-[32px] leading-[110%] font-bold uppercase relative text-center mb-8 md:mb-16  md:text-left md:text-[28px] lg:text-5xl 3xl:text-8xl  3xl:mb-8'>
         ПРИЄДНУЙСЯ ДО НАШОГО КОМ’ЮНІТІ
       </h3>
-      <div className=' border-card rounded-[20px] w-[280px] h-[178px] p-5  lg:px-[64px] lg:py-[40px] mb-16 md:mb-0  md:w-[630px]'>
-        <h3 className='text-[16px] leading-[130%] text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:text-left'>
-          МАЙБУТНЄ ВЖЕ ТУТ Unity
-        </h3>
-        <h3 className='text-base text-[#D9D9D9] uppercase font-bold text-center lg:text-3xl lg:mb-8 lg:text-left mb-5'>
-          САМЕ ЗАРАЗ ЧАС ПОЧАТИ
+      <div className=' border-card rounded-[20px] w-[280px] h-[178px] p-5 md:pt-[30px]  lg:px-[64px] lg:py-[40px] md:mb-0 md:h-[202px] md:w-[464px]'>
+        <h3 className='text-[16px]  mb-[20px] leading-[130%] text-[#D9D9D9] uppercase font-bold text-center  lg:text-3xl lg:text-left'>
+          МАЙБУТНЄ ВЖЕ ТУТ Unity САМЕ ЗАРАЗ ЧАС ПОЧАТИ
         </h3>
         <div className='flex flex-col items-center lg:items-start'>
-          <p className='text-[18px] font-medium leading-[120%] text-center mb-[10px] lg:text-2xl'>
+          <p className='text-[18px] font-medium leading-[120%] text-center mb-[10px]  lg:text-2xl'>
             Посилання для близьких
           </p>
           <div className='flex flex-col items-center lg:flex-row lg:gap-8'>
             <a
               href='https://t.me/Serezha33'
-              className='text-[#9463FE] font-semibold text-lg px-5 py-[5] mb-1 lg:p-0 lg:m-0 lg:text-2xl'
+              className='text-[#9463FE] font-semibold text-[18px] leading-[110%] px-5 py-[4px] mb-1 lg:p-0 lg:m-0 lg:text-2xl'
             >
               Телеграм
             </a>
-            <div className='flex justify-center items-center gap-1'>
+            <div className='flex justify-start items-center'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='5'
                 height='7'
                 viewBox='0 0 5 7'
                 fill='none'
-                className='lg:w-[19px] lg:h-[23px]'
+                className='mr-1 lg:w-[19px] lg:h-[23px]'
               >
                 <path
                   fill-rule='evenodd'
@@ -47,7 +44,7 @@ export const ComeIn = () => {
                   fill='white'
                 />
               </svg>
-              <span className='text-[10px] lg:text-2xl'>
+              <span className='text-[10px] leading-[110%] lg:text-2xl tracking-wider'>
                 Скопіювати посилання
               </span>
             </div>

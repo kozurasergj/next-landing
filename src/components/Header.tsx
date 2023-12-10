@@ -13,9 +13,9 @@ export const Header = () => {
     <header>
       <div
         id='header'
-        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[72px] md:my-[16px] 2xl:mx-[135px] 2xl:my-[12px]'
+        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[49px] md:my-[4px] md:p-0 md:justify-start  2xl:mx-[135px] 2xl:my-[12px]'
       >
-        <Link href='/'>
+        <Link href='/' className='md:mr-[295px]'>
           <IconLogo
             fill={'#9463FE'}
             className='w-[78px] h-[9px] md:w-[113px] md:h-[13px] xl:w-[170px] xl:h-[20px]'
@@ -121,9 +121,9 @@ export const Header = () => {
             </ul>
           </nav>
           {/* end */}
-          <div className='flex justify-between items-center w-[146px] h-[22px]'>
+          <div className='flex justify-between items-center w-[146px] h-[22px] md:w-[212px] md:h-[29px] md:gap-8'>
             <BtnLanguage className='' />
-            <BtnSignIn className='w-[70px] h-[22px] flex items-center p-1 rounded-md ' />
+            <BtnSignIn className='w-[70px] h-[22px] flex items-center p-1 rounded-md md:w-[88px] md:h-[29px] md:mt-1' />
             <BtnBurger open={open} setOpen={setOpen} className='' />
           </div>
         </div>

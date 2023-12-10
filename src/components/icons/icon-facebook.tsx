@@ -8,6 +8,7 @@ export const IconFacebook = (props: TypeIconProps) => {
       viewBox='0 0 32 33'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      {...props}
     >
       <g id='Facebook'>
         <circle id='Box' cx='16' cy='16.5537' r='16' fill='#1877F2' />

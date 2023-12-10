@@ -36,6 +36,26 @@
     width: 32px;
 }
 
+
+@media (min-width: 768px) {
+  .hamburger .line:nth-child(1) {
+    width: 20px;
+    margin-bottom: 6px;
+}
+
+.hamburger .line:nth-child(2) {
+    width: 24px;
+    margin-bottom: 6px;
+}
+
+.hamburger .line:nth-child(3) {
+    width: 32px;
+}
+
+}
+
+
+
 /* .hamburger.is-active .line:nth-child(2) {
     opacity: 0;
 }

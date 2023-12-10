@@ -89,7 +89,7 @@ export const BtnLanguage = (props: BtnProps) => {
       <button
         onClick={() => setIsDropDownListOpen(!isDropDownListOpen)}
         className={
-          'flex-center flex-col gap-[6px] rounded-full w-[20px] h-[20px] '
+          'flex-center flex-col gap-[6px] rounded-full w-[20px] h-[20px] md:w-[28px] md:h-[28px] '
         }
         ref={wrapRef}
       >

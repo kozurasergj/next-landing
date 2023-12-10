@@ -31,16 +31,16 @@ export const Footer = () => {
         </svg>
       </a>
       {/* arrow end */}
-      <div className='px-[20px] py-7 flex flex-col items-center  md:gap-0  md:pt-10 md:pb-2 '>
+      <div className='px-[20px] py-7 flex flex-col items-center  md:gap-0  md:pt-10 md:pb-2 md:mr-[16px] '>
         <IconLogo
           fill={'#656565'}
-          className='w-[280px] h-[33px] md:w-[588px] md:h-[71px] mb-[30px] md:mb-[10px]'
+          className='w-[280px] h-[33px] md:w-[588px] md:h-[71px] mb-[30px] md:mb-[14px]'
         />
         <ul className='mb-[30px] text-base gap-[5px] h-[138px] md:gap-[16px] flex flex-col justify-start  md:mb-[15px]  md:h-auto md:flex-row items-center '>
           <li className='text-center'>
             <Link
               href='/ukrainians'
-              className='text-gray whitespace-nowrap leading-[110%] text-base md:text-[14px]'
+              className='text-gray whitespace-nowrap leading-[110%] text-base md:text-[12px]'
             >
               Для Українців
             </Link>
@@ -48,7 +48,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/business'
-              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[12px]'
             >
               Для Бізнесу
             </Link>
@@ -56,7 +56,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/users'
-              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[12px]'
             >
               Для користувачів
             </Link>
@@ -64,7 +64,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/translator'
-              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[12px]'
             >
               Про нас
             </Link>
@@ -72,7 +72,7 @@ export const Footer = () => {
           <li className='text-center'>
             <Link
               href='/contacts'
-              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[14px]'
+              className='whitespace-nowrap text-[#C9C9C9] leading-[110%] text-base md:text-[12px]'
             >
               Контакти
             </Link>
@@ -82,7 +82,7 @@ export const Footer = () => {
               Увійти
             </button>
           </li> */}
-          <BtnSignIn className=' hidden md:flex ml-[40px] items-center p-1 rounded-md md:w-[88px] md:h-[29px] md:mt-1' />
+          <BtnSignIn className=' hidden md:flex ml-[40px] md:ml-[55px] items-center p-1 md:px-[6px] md:gap-[6px] rounded-md md:w-[88px] md:h-[29px]' />
         </ul>
         <div className='flex w-[136px] gap-5 mb-[14px] md:items-center md:justify-center'>
           <BtnTelegram />
@@ -93,10 +93,10 @@ export const Footer = () => {
           <p className='md:text-[7px] text-gray2'>
             © 2024 Unity Care. All rights reserved
           </p>
-          <div className='flex justify-between  text-gray2 w-[185px] flex-wrap'>
+          <div className='flex justify-between  text-gray2 w-[185px] flex-wrap '>
             <a
               href='/'
-              className='text-gray2  md:text-[7px] whitespace-nowrap w-full text-center'
+              className='text-gray2  md:text-[7px] whitespace-nowrap w-full md:w-fit text-center'
             >
               Terms & policies
             </a>

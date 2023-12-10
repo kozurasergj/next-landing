@@ -17,20 +17,20 @@ export const Cards = (props: ComponentProps) => {
     <section className={props.className}>
       {/* 1 section ready */}
       <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto '>
-        <div className='flex flex-col md:flex-row md:w-[527px] md:justify-between items-center justify-center mb-8 md:mb-0  w-[279px]  3xl:w-[1092px]'>
+        <div className='flex flex-col items-center justify-center mb-8 w-[279px] md:w-[527px] md:flex-row  md:justify-between  md:mb-0  3xl:w-[1092px]'>
           <div>
             <h3 className='text-gradient text-[32px] font-bold leading-[110%]  text-center mb-5 md:text-left  md:text-[28px]  lg:text-5xl 3xl:text-8xl uppercase relative  3xl:mb-8'>
               unity робить ВСЕ доступним{' '}
             </h3>
-            <p className='text-[#D9D9D9] mb-8 md:mb-0 text-center text-lg leading-[120%]  md:text-left md:text-[16px] lg:text-xl 3xl:text-2xl '>
+            <p className='text-[#D9D9D9] mb-8 md:mb-0 text-center text-lg leading-[120%]  md:text-left md:text-[16px] md:w-[336px] lg:text-xl 3xl:text-2xl '>
               Новітні технології для покращення вашого повсякденного життя,
               ведення бізнесу та вирішення будь-яких питань{' '}
             </p>
           </div>
           <div className='lg:hidden'>
-            <BtnBig className='w-[93px] h-[93px] turquoiseBg gap-1'>
-              <IconVolume className='' />
-              <span className='text-[14px] font-bold leading-[130%] capitalize text-center '>
+            <BtnBig className='w-[93px] h-[93px] md:w-[85px] md:h-[85px] turquoiseBg gap-1'>
+              <IconVolume className='md:w-[18px] md:h-[18px]' />
+              <span className='text-[14px] font-bold leading-[130%] md:text-[10px] md:font-semibold md:uppercase capitalize text-center '>
                 інструкції
               </span>
             </BtnBig>
@@ -54,9 +54,9 @@ export const Cards = (props: ComponentProps) => {
               />
               <div className='flex flex-col items-center'>
                 <p
-                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] md:leading-[108%] lg:text-lg ${
                     isState1
-                      ? 'opacity-100 min-h-[175px]'
+                      ? 'opacity-100 min-h-[175px] md:min-h-[159px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
                   } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
                 >
@@ -86,9 +86,9 @@ export const Cards = (props: ComponentProps) => {
               />
               <div className='flex flex-col items-center'>
                 <p
-                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg  ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] md:leading-[108%] lg:text-lg  ${
                     isState2
-                      ? 'opacity-100 min-h-[175px]'
+                      ? 'opacity-100 min-h-[175px] md:min-h-[159px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
                   } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
                 >
@@ -120,9 +120,9 @@ export const Cards = (props: ComponentProps) => {
               />
               <div className='flex flex-col items-center'>
                 <p
-                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg  ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] md:leading-[108%] lg:text-lg  ${
                     isState3
-                      ? 'opacity-100 min-h-[175px]'
+                      ? 'opacity-100 min-h-[175px] md:min-h-[159px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
                   } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
                 >
@@ -143,7 +143,6 @@ export const Cards = (props: ComponentProps) => {
               <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%]  text-base 3xl:font-bold 3xl:text-2xl'>
                 Голосовий помічник{' '}
               </div>
-
               <img
                 src='/777.png'
                 alt='Image'
@@ -153,9 +152,9 @@ export const Cards = (props: ComponentProps) => {
               />
               <div className='flex flex-col items-center'>
                 <p
-                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] lg:text-lg ${
+                  className={`mx-5 pt-5 mb-[11px] text-[14px] leading-[120%] md:leading-[108%] lg:text-lg ${
                     isState4
-                      ? 'opacity-100 min-h-[175px]'
+                      ? 'opacity-100 min-h-[175px] md:min-h-[159px]'
                       : 'opacity-0 h-auto max-h-0 hidden'
                   } transition-opacity duration-500 transition-max-h ease-in-out overflow-hidden`}
                 >

@@ -1,21 +1,21 @@
 export const ComeIn = () => {
   return (
-    <div className='flex flex-col items-center justify-center mb-[92px] md:mb-[100px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
+    <div className='flex flex-col items-center justify-center mb-[92px] md:mb-[130px] w-[279px] mx-auto md:w-[630px] lg:w-[666px] 3xl:w-[1092px]'>
       <h3 className='text-gradient text-[32px] leading-[110%] font-bold uppercase relative text-center mb-8 md:mb-16  md:text-left md:text-[28px] lg:text-5xl 3xl:text-8xl  3xl:mb-8'>
         ПРИЄДНУЙСЯ ДО НАШОГО КОМ’ЮНІТІ
       </h3>
-      <div className=' border-card rounded-[20px] w-[280px] h-[178px] p-5 md:pt-[30px]  lg:px-[64px] lg:py-[40px] md:mb-0 md:h-[202px] md:w-[464px]'>
-        <h3 className='text-[16px]  mb-[20px] leading-[130%] text-[#D9D9D9] uppercase font-bold text-center  lg:text-3xl lg:text-left'>
+      <div className=' border-card rounded-[20px] w-[280px] h-[178px] p-5 md:py-[32px] md:px-[100px]  md:mb-0 md:h-[193px] md:w-[464px]'>
+        <h3 className='text-[16px]  mb-[20px] leading-[130%] text-[#D9D9D9] uppercase font-bold text-center md: lg:text-3xl lg:text-left'>
           МАЙБУТНЄ ВЖЕ ТУТ Unity САМЕ ЗАРАЗ ЧАС ПОЧАТИ
         </h3>
         <div className='flex flex-col items-center lg:items-start'>
-          <p className='text-[18px] font-medium leading-[120%] text-center mb-[10px]  lg:text-2xl'>
+          <p className='text-[18px] font-medium leading-[120%] text-center mb-[8px]  lg:text-2xl'>
             Посилання для близьких
           </p>
           <div className='flex flex-col items-center lg:flex-row lg:gap-8'>
             <a
               href='https://t.me/Serezha33'
-              className='text-[#9463FE] font-semibold text-[18px] leading-[110%] px-5 py-[4px] mb-1 lg:p-0 lg:m-0 lg:text-2xl'
+              className='text-[#9463FE] font-semibold text-[18px] leading-[110%] md:leading-[130%]  px-5 py-[4px] mb-1 md:py-0 lg:p-0 lg:m-0 lg:text-2xl'
             >
               Телеграм
             </a>
@@ -44,7 +44,7 @@ export const ComeIn = () => {
                   fill='white'
                 />
               </svg>
-              <span className='text-[10px] leading-[110%] lg:text-2xl tracking-wider'>
+              <span className='text-[10px] leading-[110%] lg:text-2xl tracking-wider '>
                 Скопіювати посилання
               </span>
             </div>

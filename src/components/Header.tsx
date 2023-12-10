@@ -13,7 +13,7 @@ export const Header = () => {
     <header>
       <div
         id='header'
-        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[49px] md:my-[4px] md:p-0 md:justify-start  2xl:mx-[135px] 2xl:my-[12px]'
+        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[74px] md:my-[4px] md:p-0 md:justify-between  2xl:mx-[135px] 2xl:my-[12px]'
       >
         <Link href='/' className='md:mr-[295px]'>
           <IconLogo
@@ -23,8 +23,8 @@ export const Header = () => {
         </Link>
         <div className='flex justify-between items-center'>
           {/* desktop */}
-          <nav className='hidden xl:block '>
-            <ul className='text-base gap-7 2xl:gap-14 transition-all xl:flex xl:justify-between'>
+          <nav className='hidden lg:block '>
+            <ul className='text-base gap-7 2xl:gap-14 transition-all lg:flex lg:justify-between'>
               <li>
                 <Link
                   href='/ukrainians'
@@ -121,9 +121,9 @@ export const Header = () => {
             </ul>
           </nav>
           {/* end */}
-          <div className='flex justify-between items-center w-[146px] h-[22px] md:w-[212px] md:h-[29px] md:gap-8'>
+          <div className='flex justify-between items-center w-[146px] h-[22px] md:w-fit md:h-fit md:gap-8'>
             <BtnLanguage className='' />
-            <BtnSignIn className='w-[70px] h-[22px] flex items-center p-1 rounded-md md:w-[88px] md:h-[29px] md:mt-1' />
+            <BtnSignIn className='w-[70px] h-[22px] flex items-center md:justify-between p-1 md:px-[6px] md:gap-[6px] rounded-md md:w-[88px] md:h-[29px] ' />
             <BtnBurger open={open} setOpen={setOpen} className='' />
           </div>
         </div>

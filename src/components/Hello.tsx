@@ -26,13 +26,13 @@ export const Hello = ({ page }: { page: string }) => {
     }
   }, [])
   return (
-    <section className=' mt-[60px] md:mt-[45px] relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
+    <section className=' mt-[60px] md:mt-[40px]  relative lg:flex lg:justify-center lg:gap-3 3xl:gap-96'>
       <div className='flex flex-col items-center lg:w-[70%]'>
         <div className='px-5 3xl:mb-8'>
           <h2
             className={`${getGradientClass(
               page
-            )} text-[48px]  mb-5 md:mb-[5px] leading-[120%] font-bold uppercase relative text-center md:leading-[110%] md:text-[64px] lg:text-[80px] 2xl:text-[128px] `}
+            )} relative  text-[48px] mb-5 md:mb-[10px]  leading-[120%] font-bold uppercase text-center  md:leading-[110%] md:text-[64px] lg:text-[80px] 2xl:text-[128px] `}
           >
             {/* Вітаю _) <br /> я юніті */}
             {parse(getTitleText(page))}
@@ -53,7 +53,7 @@ export const Hello = ({ page }: { page: string }) => {
         <p className='text-purple text-center text-[24px] leading-[110%] font-bold  md:w-full md:text-center md:mb-5 md:text-base md:font-medium md:leading-[120%] md:text-[16px] lg:text-3xl lg:mb-8  lg:font-semibold'>
           Кількість людей, що користуються Unity
         </p>
-        <div className='flex flex-col w-[200px] md:w-0 items-center justify-center mb-8 mt-8 md:mt-0 md:flex-row md:gap-8 3xl:gap-20 '>
+        <div className='flex flex-col w-[200px] md:w-0 items-center justify-center mb-8 mt-8 md:mt-0 md:mb-[30px] md:flex-row md:gap-8 3xl:gap-20 '>
           <div className='flex flex-col mb-[30px] md:mb-0 items-center '>
             <span className='text-white text-3xl  tracking-wider h-[35px] my-[23px]  3xl:text-5xl'>
               {usersCount}

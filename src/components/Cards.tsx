@@ -1,10 +1,10 @@
 'use client'
 import { ComponentProps } from '@/types'
 import { useState } from 'react'
+import { BtnBig } from './buttons/btn-big'
 import { BtnDropDown } from './buttons/btn-drop-down'
 import { BtnTryIt } from './buttons/btn-try-it'
 import { IconVolume } from './icons/icon-volume'
-import { BtnBig } from './buttons/btn-big'
 
 export const Cards = (props: ComponentProps) => {
   // 1 section cards
@@ -16,15 +16,15 @@ export const Cards = (props: ComponentProps) => {
   return (
     <section className={props.className}>
       {/* 1 section ready */}
-      <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1005px] mx-auto '>
+      <div className='w-full flex justify-center md:justify-start md:w-[624px] lg:w-[800px] 2xl:w-[1014px] mx-auto lg:ml-[135px]'>
         <div className='flex flex-col items-center justify-center mb-8 w-[279px] md:w-[527px] md:flex-row  md:justify-between  md:mb-0  3xl:w-[1092px]'>
           <div>
-            <h3 className='text-gradient text-[32px] font-bold leading-[110%]  text-center mb-5 md:text-left  md:text-[28px]  lg:text-5xl 3xl:text-8xl uppercase relative  3xl:mb-8'>
+            <h3 className='uppercase relative text-gradient text-[32px] font-bold leading-[110%] text-center mb-5 md:text-left md:text-[28px] lg:text-5xl lg:ml-2 3xl:text-[90px] 3xl:leading-[115%] 3xl:mb-[29px] '>
               unity робить ВСЕ доступним{' '}
             </h3>
-            <p className='text-[#D9D9D9] mb-8 md:mb-0 text-center text-lg leading-[120%]  md:text-left md:text-[16px] md:w-[336px] lg:text-xl 3xl:text-2xl '>
-              Новітні технології для покращення вашого повсякденного життя,
-              ведення бізнесу та вирішення будь-яких питань{' '}
+            <p className='text-[#D9D9D9] mb-8 md:mb-0 text-center text-lg leading-[120%]  md:text-left md:text-[16px] md:w-[336px] lg:w-[721px] lg:text-[24px] lg:leading-[110%] lg:ml-[5px]'>
+              Інноваційна платформа для спрощення повсякденних завдань та
+              ефективного управління бізнесом
             </p>
           </div>
           <div className='lg:hidden'>
@@ -37,9 +37,10 @@ export const Cards = (props: ComponentProps) => {
           </div>
         </div>
       </div>
+
       <div className=' w-full target-cardsBg md:mb-[99px]'>
-        <div className='flex flex-col mb-[30px] md:mb-16  md:flex-row  md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 '>
-          <div className='flex flex-col gap-[30px] md:gap-4'>
+        <div className='flex flex-col mb-[30px] md:mb-16  md:flex-row  md:w-[624px] lg:w-[800px] 2xl:w-[1005px] md:mx-auto items-center md:items-start cardsBg md:bg-none gap-8 md:gap-4 lg:gap-8  md:pt-16 lg:ml-[135px] lg:mb-8'>
+          <div className='flex flex-col gap-[30px] md:gap-4 lg:gap-8'>
             {/* 1 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
               <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%] text-base 3xl:font-bold 3xl:text-2xl'>
@@ -105,7 +106,7 @@ export const Cards = (props: ComponentProps) => {
               </div>
             </div>
           </div>
-          <div className='flex flex-col gap-[30px] md:gap-4'>
+          <div className='flex flex-col gap-[30px] md:gap-4 lg:gap-8'>
             {/* 3 */}
             <div className='relative w-[280px] md:w-[304px] lg:w-[491px]  rounded-[20px] bg-cardBgGray'>
               <div className='absolute top-0 left-0 p-5 text-white font-bold leading-[120%]  text-base 3xl:font-bold 3xl:text-2xl'>
@@ -172,10 +173,28 @@ export const Cards = (props: ComponentProps) => {
             </div>
           </div>
         </div>
-        <div className='w-full flex justify-center items-center md:justify-start md:w-[624px] mx-auto'>
-          <BtnTryIt className='w-[182px] h-[39px] py-1 text-[18px] leading-[130%] font-bold capitalize '>
+        <div className='w-full flex justify-center items-center md:justify-start md:w-[624px] lg:w-[1014px] lg:ml-[135px] lg:justify-center  mx-auto'>
+          <BtnTryIt className='lg:hidden w-[182px] h-[39px] py-1 text-[18px] leading-[130%] font-bold capitalize '>
             спробувати{' '}
           </BtnTryIt>
+          <BtnBig className='hidden lg:flex flex-col items-center justify-center bg-purple h-[139px] w-[139px]  gap-[10px]  2xl:h-[216px] 2xl:w-[216px] lg:gap-[12px] relative z-10'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='15'
+              height='14'
+              viewBox='0 0 24 24'
+              enable-background='new 0 0 24 24'
+              className='3xl:w-[22px] 3xl:h-[22px]'
+            >
+              <path
+                fill='currentColor'
+                d='M15.8545 4.0082H2.20003V0.408203H22V20.2082H18.4V6.55379L3.47283 21.481L0.927246 18.9354L15.8545 4.0082Z'
+              />
+            </svg>
+            <span className='text-[16px] leading-[130%] uppercase lg:capitalize  font-semibold  lg:text-[26px] lg:leading-[110%]'>
+              спробувати
+            </span>
+          </BtnBig>
         </div>
       </div>
       {/* end 1 section ready */}

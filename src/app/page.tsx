@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <section className='font-sans'>
       <Hello page={usePathnameWithoutSlash(pathname)} />
-      <Cards className='mt-16 md:mt-[117px]' />
+      <Cards className='mt-16 md:mt-[117px] lg:mt-[243px]' />
       <Form />
       <ComeIn />
     </section>

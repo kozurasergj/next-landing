@@ -13,52 +13,64 @@ export const Header = () => {
     <header>
       <div
         id='header'
-        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[74px] md:my-[4px] md:p-0 md:justify-between  2xl:mx-[135px] 2xl:my-[12px]'
+        className='flex justify-between items-center px-[20px] py-[10px] md:mx-[74px] md:my-[4px] md:p-0 md:justify-between  2xl:mx-[135px] 2xl:my-[10px]'
       >
         <Link href='/' className='md:mr-[295px]'>
           <IconLogo
             fill={'#9463FE'}
-            className='w-[78px] h-[9px] md:w-[113px] md:h-[13px] xl:w-[170px] xl:h-[20px]'
+            className='w-[78px] h-[9px] md:w-[113px] md:h-[13px] 2xl:w-[170px] 2xl:h-[20px]'
           />
         </Link>
         <div className='flex justify-between items-center'>
           {/* desktop */}
-          <nav className='hidden lg:block '>
-            <ul className='text-base gap-7 2xl:gap-14 transition-all lg:flex lg:justify-between'>
+          <nav className='hidden lg:block lg:mr-[135px]'>
+            <ul className='gap-7 2xl:gap-[32px] transition-all lg:flex lg:justify-between'>
               <li>
                 <Link
                   href='/ukrainians'
-                  className='text-gray whitespace-nowrap'
+                  className='text-gray whitespace-nowrap text-[16px] leading-[110%] font-medium'
                   aria-label='cases page'
                 >
                   Для Українців
                 </Link>
               </li>
               <li>
-                <Link href='/business' className='whitespace-nowrap text-gray'>
+                <Link
+                  href='/business'
+                  className='whitespace-nowrap text-gray text-[16px] leading-[110%] font-medium'
+                >
                   Для Бізнесу
                 </Link>
               </li>
               <li>
-                <Link href='/users' className='whitespace-nowrap text-gray'>
+                <Link
+                  href='/users'
+                  className='whitespace-nowrap text-gray text-[16px] leading-[110%] font-medium'
+                >
                   Для користувачів
                 </Link>
               </li>
               <li>
                 <Link
                   href='/translator'
-                  className='whitespace-nowrap text-gray'
+                  className='whitespace-nowrap text-gray text-[16px] leading-[110%] font-medium'
                 >
                   Перекладач
                 </Link>
               </li>
               <li>
-                <Link href='/unity' className='whitespace-nowrap text-gray'>
+                <Link
+                  href='/unity'
+                  className='whitespace-nowrap text-gray text-[16px] leading-[110%] font-medium'
+                >
                   Можливості Юніті
                 </Link>
               </li>
               <li>
-                <Link href='/contacts' className='whitespace-nowrap text-gray'>
+                <Link
+                  href='/contacts'
+                  className='whitespace-nowrap text-gray text-[16px] leading-[110%] font-medium'
+                >
                   Контакти
                 </Link>
               </li>
@@ -121,9 +133,9 @@ export const Header = () => {
             </ul>
           </nav>
           {/* end */}
-          <div className='flex justify-between items-center w-[146px] h-[22px] md:w-fit md:h-fit md:gap-8'>
+          <div className='flex justify-between items-center w-[146px] h-[22px] md:w-fit md:h-fit md:gap-8 lg:gap-0'>
             <BtnLanguage className='' />
-            <BtnSignIn className='w-[70px] h-[22px] flex items-center md:justify-between p-1 md:px-[6px] md:gap-[6px] rounded-md md:w-[88px] md:h-[29px] ' />
+            <BtnSignIn className='w-[70px] h-[22px] flex items-center md:justify-between p-1 md:px-[6px] md:gap-[6px] rounded-md md:w-[88px] md:h-[29px] lg:w-[116px] lg:h-[42px] lg:rounded-[10px] lg:px-[20px] lg:py-[10px] lg:ml-[32px]' />
             <BtnBurger open={open} setOpen={setOpen} className='' />
           </div>
         </div>

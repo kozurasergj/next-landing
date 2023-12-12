@@ -10,7 +10,7 @@ export const getGradientClass = (page: string) => {
 
 export const getTitleText = (page: string) => {
   if (page === '') {
-    return `Вітаю! <br/> я unity`
+    return `Привіт! <br/> я unity`
   } else if (page === 'ukrainians') {
     return `Юніті допоможе коли вам це необхідно`
   }  else if (page === 'business') {

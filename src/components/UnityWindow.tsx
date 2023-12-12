@@ -5,10 +5,12 @@ import { IconWindow } from './icons/icon-window'
 
 export const UnityWindow = (props: ComponentProps) => {
   return (
-    <section className='hidden flex-col items-center gap-8 lg:flex '>
-      <BtnBig className='w-[139px] h-[139px] turquoiseBg'>
-        <IconVolume />
-        інструкції
+    <section className={`${props.className}`}>
+      <BtnBig className='w-[139px] h-[139px] turquoiseBg flex flex-col justify-center items-center lg:gap-2'>
+        <IconVolume className='lg:w-[30px] lg:h-[30px]' />
+        <span className='lg:text-[16px] lg:font-semibold lg:leading-[130%] lg:uppercase'>
+          інструкції
+        </span>
       </BtnBig>
       <IconWindow />
     </section>

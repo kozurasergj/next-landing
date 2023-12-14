@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import './globals.css'
 import { Montserrat } from 'next/font/google'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'My version',
@@ -23,7 +23,7 @@ export default function LocaleLayout({
 }) {
   return (
     <html>
-      <body className={`${montserrat.variable} font-sans`}>
+      <body className={`${montserrat.variable} relative font-sans`}>
         <Header />
         {children}
         <Footer />

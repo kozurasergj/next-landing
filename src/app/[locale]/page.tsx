@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <section className='font-sans'>
       <Hello data={homePage.data[0].attributes.Hello} />
-      <Cards className='mt-16 md:mt-[117px] lg:mt-[243px]' />
+      <Cards className='mt-16  md:mt-[117px] lg:mt-[243px]' />
       <Form />
       <ComeIn />
     </section>
